@@ -1,221 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<!--本源码来自DM孵化园：www.dmfhy.com-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>骇客 - 茉莉网络安全</title>
-    <style>
-        *{box-sizing: border-box;}
-        body{
-            background: #000;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            text-shadow: 0px 0px 80px;
-        }
-        h1{
-            margin: 0;
-            padding: 0;
-            color: #0ff;
-        }
-        a{color: #fff;}
-        /* 盒子↓ */
-        p{
-            margin: 0;
-        }
-        .box{
-            /* 盒子宽度↓ ---最好别改*/
-            width: 700px;
-            /* 让视频居中对齐↓---最好别动 */
-            text-align: center;
-            /* border: 1px solid #f00; */
-            color: #fff;
-            
-            position: absolute;
-            margin: 20px auto 0;
-            top: 20px;
-            left: 0;
-            right: 0;
-        }
-        /* 图片样式↓ */
+<html lang="zh-CN">
+  <head>
+    <title>个人主页</title>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-        img{
-            /* 视频宽度↓ ---最好不要大于上面盒子的宽度*/
-            width: 700px;
-            height: 390px;
-            /* 灰色的描边↓ ---px是粗细 solid是实线 #555是颜色代码 可以百度html颜色代码修改*/
-            border: 2px solid #222;
-            /* 图片的圆角 */
-            border-radius: 5px;
-            /* 动画时间 */
-            transition: 0.8s;
-        }
-        .img2:hover{border: 2px solid #980b18}
+  <body>
+    <nav>
+      <a href="#" id="home" class="active">首页</a>
+      <a href="#" id="about">关于</a>
+      <a href="#" id="timeline">历程</a>
+      <a href="#" id="website">站点</a>
+      <img src="assets/images/icon/play.svg" id="music" alt="music" />
+      <img src="assets/images/icon/sun.svg" id="darkMode" alt="darkMode" />
+    </nav>
 
-        .box>div{
-            padding: 20px;
-            /* border: 1px solid #f00; */
-        }
-        .szj{
-            position: absolute;
-            top: 0;
-            left: 0;
-            color: #fff;
-            padding: 5px;
-            border: 1px solid #eee;
-            background-color: rgb(0,0,0,0.7)
-        }
-        .yl{
-            display: inline;
-            border-bottom:1px dotted #0ff;
-        }
-        .yl a{
-            text-decoration: none;
-            color:#c6d491;
-            
-        }
-        .yl span{
-            margin-right: 8px;
-        }
-    </style>
-</head>
-<body>
-    <canvas id="canvas"></canvas>
-    <div class="box">
-        <!-- 图片部分 -->
-        <img class="img2" src="https://www.dmfhy.com/wp-content/uploads/2023/08/2023080114071118.jpg" alt="">
-        <div class="text">
-            <h1>茉莉网络安全组</h1>
-
-            <br>
-
-            <span style="color: #0f0">官方Q群：</span><span><a target="view_window" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=z4J3fi3A_NuMHOAwbE87a0p2YrSiF3jb&authKey=p28mUB4ZIE8HbNF5Li9rp1mSAg3dN4H13z5rSp6LkF%2BWwTyHXwGOmS%2FKEEudfP5m&noverify=0&group_code=570387739">茉莉资源分享</a></span>
-<br><br>
-
-            <p class="glow" style="color: #f00; font-size:21px;">友情检测，请及时修复</p>
-            <p class="glow" style="color: #f00; font-size:10px;">或联系本人修复</p>
-            <br>
-            <span style="color: #3ee5df">茉莉QQ：</span><span><a  style="color: #e5743e;" target="view_window" href="https://qm.qq.com/q/3fOhEpLw6k">1265274322</a></span>
-            <br><br>
-            <P class="glow">安全之路，永不妥协</P>
-<br><br><br><br>
-            <div class="yl"><span style="color: #f0f">友情链接：</span><span><a href="https://tianyu.360.cn/#/global/index">三六零天御</a></span> <span><a href="https://s.tencent.com/">腾讯安全</a></span><span><a href="https://m.dun.163.com/">网易易盾</a></span></div>
-
+    <main class="scrollbar">
+      <section title="home">
+        <img src="assets/images/bg.jpg" id="bg" alt="背景" />
+        <img
+          src="https://q1.qlogo.cn/g?b=qq&nk=1265274322&s=640"
+          class="avatar"
+          onclick="alert('戳我干嘛 ￣へ￣')"
+        />
+        <div class="info">
+          <h2>茉莉</h2>
+          <h4>心存敬畏 行有所止</h4>
         </div>
-    </div>
-    <div class="szj">
-<pre>
-  入侵三字经
-
-进谷歌 找注入
-
-没注入 就旁注
-
-没旁注 用Oday
-
-没Oday 猜目录
-
-没目录 就嗅探
-
-爆账户 找后台
-
-传小马 放大马
-
-拿权限 挂页面
-</pre>
-
-    
-
-
-    <!-- 音乐部分 -->
-    <embed height="0" width="0" src="http://music.163.com/song/media/outer/url?id=2017918744.mp3"></embed>
-
-    
-<!--核心价值观-->
-<script type="text/javascript"> /* 鼠标特效 */ var a_idx = 0; jQuery(document).ready(function($) { 
-    $("body").click(function(e) { 
-        var a = new Array("富强", 
-        "民主",
-         "文明",
-          "和谐", 
-          "自由", 
-          "平等", 
-          "公正" ,
-          "法治", 
-          "爱国",
-           "敬业", 
-           "诚信", 
-           "友善"); 
-        var $i = $("<span/>").text(a[a_idx]); 
-        a_idx = (a_idx + 1) % a.length; 
-        var x = e.pageX, 
-        y = e.pageY; 
-        $i.css({ 
-            "z-index": 999, 
-            "top": y - 20, 
-            "left": x, 
-            "position": "absolute", 
-            "font-weight": "bold", 
-            "color": "#ff6651" 
-        }); 
-        $("body").append($i); 
-        $i.animate({ 
-            "top": y - 180, 
-            "opacity": 0 
-        }, 
-        1500, 
-        function() { 
-            $i.remove(); 
-        }); 
-    }); }); 
-    </script><!--edn--核心价值观-->
-
-
-
-    <!-- 以下js -->
-
-
-    <script>
-    var canvas = document.getElementById('canvas');
-		var ctx = canvas.getContext('2d');
-
-
-		canvas.height = window.innerHeight;
-		canvas.width = window.innerWidth;
-        // 下面的雷军就是代码雨的文字
-		var texts = '骇客'.split('');
-
-		var fontSize = 16;
-		var columns = canvas.width/fontSize;
-		// 用于计算输出文字时坐标，所以长度即为列数
-		var drops = [];
-		//初始值
-		for(var x = 0; x < columns; x++){
-			drops[x] = 1;
-		}
-
-		function draw(){
-			//让背景逐渐由透明到不透明
-			ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-			ctx.fillRect(0, 0, canvas.width, canvas.height);
-			//文字颜色
-			ctx.fillStyle = '#0F0';
-			ctx.font = fontSize + 'px arial';
-			//逐行输出文字
-			for(var i = 0; i < drops.length; i++){
-				var text = texts[Math.floor(Math.random()*texts.length)];
-				ctx.fillText(text, i*fontSize, drops[i]*fontSize);
-
-				if(drops[i]*fontSize > canvas.height || Math.random() > 0.95){
-					drops[i] = 0;
-				}
-
-				drops[i]++;
-			}
-		}
-	setInterval(draw, 33);
-</script>
-</body>
+        <div id="link"></div>
+      </section>
+      <section title="about">
+        <div class="item">
+          <h3># 关于我</h3>
+          <p style="text-indent: 2em">
+            嗨！我是茉莉，
+            一个热爱开发的全栈大佬，官方交流群570387739
+          </p>
+          <br />
+          <p>- [x] HTML</p>
+          <p>- [x] CSS</p>
+          <p>- [x] JavaScript</p>
+          <p>- [x] ...</p>
+          <br />
+          <h3># 特别感谢</h3>
+          <h5>
+            - 图标来自:
+            <a
+              href="https://github.com/Remix-Design/RemixIcon"
+              target="_blank"
+              style="text-decoration: underline"
+              >REMIX ICON</a
+            >
+          </h5>
+          <h5>
+            - 字体来自:
+            <a
+              href="https://github.com/ButTaiwan/gensen-font"
+              target="_blank"
+              style="text-decoration: underline"
+              >源泉圆体</a
+            >
+          </h5>
+          <h5>
+            - 天气来自:
+            <a href="https://www.seniverse.com" target="_blank" style="text-decoration: underline"
+              >心知天气</a
+            >
+          </h5>
+        </div>
+        <div id="project" class="item">
+          <h3># 项目地址</h3>
+          <div>
+            <a href="https://www.qq163.top" target="_blank">
+              <img src="assets/images/icon/gitee-fill.svg" alt="gitee" />
+            </a>
+            <a href="https://www.qq163.top" target="_blank">
+              <img src="assets/images/icon/github-fill.svg" alt="github" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section title="timeline">
+        <div class="item">
+          <ul id="line"></ul>
+        </div>
+      </section>
+      <section title="website">
+        <ul id="site"></ul>
+      </section>
+    </main>
+    <footer>
+      <a href="http://beian.miit.gov.cn/" target="_blank"> 京ICP备11020872号-17 </a>
+      &nbsp;|&nbsp;
+      <a
+        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11020872"
+        target="_blank"
+      >
+        京ICP备11020872号-17
+      </a>
+    </footer>
+    <div id="tp-weather-widget"></div>
+    <img
+      src="assets/images/China.svg"
+      alt="China"
+      style="width: 70px; position: fixed; right: 10px; bottom: 40px"
+    />
+    <audio preload="load" id="music" loop="loop">
+      <!-- 未来音乐链接可能会失效，可自行更换 -->
+      <source src="https://uninto.com/runfree.mp3" />
+    </audio>
+    <script src="assets/index.js"></script>
+  </body>
 </html>
