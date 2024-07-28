@@ -1,84 +1,84 @@
 {
-  "iconList": [
+  "图标列表":[
     {
-      "icon": "assets/images/icon/mail.svg",
-      "url": "mailto:moli123abc@petalmail.com"
+      "图标":"assets/images/icon/mail.svg",
+      "URL":"mailto:moli123abc@petalmail.com"
     },
     {
-      "icon": "assets/images/icon/bilibili.svg",
-      "url": "https://b23.tv/iDh4oum"
+      "图标":"assets/images/icon/bilibili.svg",
+      "URL":"https://b23.tv/iDh4oum"
     },
     {
-      "icon": "assets/images/icon/weibo.svg",
-      "url": "https://qm.qq.com/q/oyaxjzz6vK"
+      "图标":"assets/images/icon/weibo.svg",
+      "URL":"https://qm.qq.com/q/oyaxjzz6vK"
     },
     {
-      "icon": "assets/images/icon/github.svg",
-      "url": "https://github.com/moliapiyyds"
+      "图标":"assets/images/icon/github.svg",
+      "URL":"https://github.com/moliapiyyds"
     },
     {
-      "icon": "assets/images/icon/telegram.svg",
-      "url": "https://t.me/moliapi"
+      "图标":"assets/images/icon/telegram.svg",
+      "URL":"https://t.me/moliapi"
     }
   ],
 
-  "lineList": [
+  "lineList":[
     {
-      "time": "2023-11-25",
-      "text": "敬请期待"
+      "时间":"2023-11-25",
+      "文本":"敬请期待"
     },
     {
-      "time": "2023-08-25",
-      "text": "ICP备案成功"
+      "时间":"2023-08-25",
+      "文本":"ICP备案成功"
     },
     {
-      "time": "2023-08-17",
-      "text": "网安备案成功"
+      "时间":"2023-08-17",
+      "文本":"网安备案成功"
     },
     {
-      "time": "2022-10-22",
-      "text": "注册新域名"
+      "时间":"2022-10-22",
+      "文本":"注册新域名"
     },
     {
-      "time": "2022-10-22",
-      "text": "注销所有备案"
+      "时间":"2022-10-22",
+      "文本":"注销所有备案"
     },
     {
-      "time": "2022-10-22",
-      "text": "域名出售"
+      "时间":"2022-10-22",
+      "文本":"域名出售"
     },
     {
-      "time": "2021-02-08",
-      "text": "独自完成救赎"
+      "时间":"2021-02-08",
+      "文本":"独自完成救赎"
     },
     {
-      "time": "...",
-      "text": "..."
+      "时间":"...",
+      "文本":"..."
     },
     {
-      "time": "2018-01-06",
-      "text": "搭建第一个网站"
+      "时间":"2018-01-06",
+      "文本":"搭建第一个网站"
     }
   ],
 
-  "siteList": [
+  "站点列表":[
     {
-      "name": "百度",
-      "content": "百度一下,你就知道",
-      "url": "https://www.baidu.com/",
-      "status": true
+      "名称":"百度",
+      "内容":"百度一下,你就知道",
+      "URL":"https://www.baidu.com/",
+      "状态":正确
     },
     {
-      "name": "谷歌",
-      "content": "谷歌搜索",
-      "url": "https://www.google.com/",
-      "status": false
+      "名称":"谷歌",
+      "内容":"谷歌搜索",
+      "URL":"https://www.google.com/",
+      "状态":假的
     },
     {
-      "name": "必应",
-      "content": "必应搜索",
-      "url": "https://cn.bing.com/",
-      "status": true
+      "名称":"必应",
+      "内容":"必应搜索",
+      "URL":"https://cn.bing.com/",
+      "状态":正确
     },
     {
       "name": "搜狗",
@@ -93,15 +93,15 @@
       "status": true
     },
     {
-      "name": "搜狗",
-      "content": "搜狗搜索",
-      "url": "https://sogou.com/",
+      "name": "腾讯",
+      "content": "腾讯新闻",
+"url"："https://qq.com/"，
       "status": true
     },
     {
-      "name": "360",
-      "content": "360搜索",
-      "url": "https://www.so.com/",
+      "name": "网易",
+      "content": "网易新闻",
+      "url": "https://163.com/",
       "status": true
     }
   ]
